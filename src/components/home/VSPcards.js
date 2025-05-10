@@ -33,7 +33,7 @@ export default function Banner({ text }) {
   const selectedLogo = getImageByText();
 
   return (
-    <div className="bg-[#464646] w-full max-w-[320px] p-3 rounded-md">
+    <div className="bg-[#464646] w-full max-w-[320px] p-5 rounded-md">
       <div className="flex flex-col sm:flex-row gap-3 items-center">
         <img
           src={selectedLogo}

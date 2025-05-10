@@ -22,6 +22,10 @@ module.exports = {
           'custom-gradient': 'linear-gradient(to bottom, #417A459E, #366BC3, #77E07F)',
         },
       },
+      fontFamily: {
+        sora: ['Poppins', 'sans-serif'],
+        syne: ['Syne', 'sans-serif'],  
+      },
     },
     plugins: [],
   }

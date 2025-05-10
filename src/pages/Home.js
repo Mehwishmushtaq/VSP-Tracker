@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <TopSection />
-      <div className='py-8 px-8 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center bg-[#D8D8D8]'>
+      <div className='py-8 px-8 md:px-28 grid grid-cols-1 md:grid-cols-3 gap-[45px] justify-items-center bg-[#D8D8D8]'>
         <VSPCards text="DUMP TRACKER" />
         <VSPCards text="EXCAVATER" />
         <VSPCards text="SCRAPER" />
