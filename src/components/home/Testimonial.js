@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import QuoteIcon from '../../assets/images/quote.png'
+import QuoteIcon from '../../assets/images/Vector.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -90,11 +90,12 @@ const ReviewsSection = () => {
                   style={{ minHeight: 340 }}
                 >
                   <div className="w-12 h-12 flex items-center justify-center mb-4">
-                    
+
                     <img
-                      src={QuoteIcon} 
+                      src={QuoteIcon}
                       alt="Quote Icon"
                       className="w-10 h-10"
+                      style={{ filter: index === 1 || index === 3 ? 'invert(0%) brightness(0)' : 'none' }}
                     />
                   </div>
                   <p className={`mb-6 text-left leading-relaxed text-base ${index === 1 ? 'text-white' : 'text-[#4b5c4b]'}`}>

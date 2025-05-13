@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-4 md:px-8">
           {/* Left content section */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-4 py-8 md:py-0">
-            <h3 className="text-lg md:text-xl font-medium">VSP TRACKER</h3>
+            <h3 className="text-lg text-primary md:text-xl font-medium">VSP TRACKER</h3>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1B1B1B] leading-tight">
               UNLOCK PEAK
               <br />
