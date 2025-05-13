@@ -21,7 +21,7 @@ export default function Banner({ text }) {
     switch (key) {
       case "dump tracker":
         return LogoDump;
-      case "excavater":
+      case "excavator":
         return LogoExcavator;
       case "scraper":
         return LogoScraper;
