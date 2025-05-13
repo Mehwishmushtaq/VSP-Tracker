@@ -31,7 +31,7 @@ const TimerStats = () => {
 
   return (
     <div
-      className="bg-cover bg-center py-12 px-4 sm:px-10"
+      className="bg-cover bg-center py-12 px-4 sm:px-10 mt-16"
       style={{ backgroundImage: `url(${timerImg})` }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-white bg-black bg-opacity-50 rounded-2xl p-6">

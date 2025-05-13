@@ -1,9 +1,9 @@
 import React from 'react';
 import SubscribeSection from './SubscribeSection';
 import logoImage from "../assets/images/logo.png";
-import twitterIcon from "../assets/images/1.png";
-import instagramIcon from "../assets/images/2.png";
-import facebookIcon from "../assets/images/3.png";
+import twitterIcon from "../assets/images/1.svg";
+import instagramIcon from "../assets/images/2.svg";
+import facebookIcon from "../assets/images/3.svg";
 
 const Footer = () => {
   return (

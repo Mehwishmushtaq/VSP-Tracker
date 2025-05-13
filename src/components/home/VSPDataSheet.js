@@ -3,7 +3,7 @@ import React from 'react';
 // Import the images
 import DashboardsImg from '../../assets/images/dashboard.svg';
 import ProductionTrackingImg from '../../assets/images/production.svg';
-import TrackRefuelingImg from '../../assets/images/track.svg';
+import TrackRefuelingImg from '../../assets/images/Refuelling_Sites__Light_230214.svg';
 import ReportsImg from '../../assets/images/reports.svg';
 import ExportsImg from '../../assets/images/exports.svg';
 import DataStorageImg from '../../assets/images/data.svg';
@@ -17,7 +17,7 @@ const VSPDataSheet = () => {
     { img: TrackRefuelingImg, text: "Track Refueling" },
     { img: ReportsImg, text: "Reports" },
     { img: ExportsImg, text: "Exports" },
-    { img: DataStorageImg, text: "Data Storage & Online Viewing" },
+    { img: DataStorageImg, text: "Data Storage &\nOnline Viewing" },
     { img: CustomizationImg, text: "Customization" },
     { img: SupportImg, text: "Support" }
   ];
@@ -27,16 +27,22 @@ const VSPDataSheet = () => {
       <h3 className="text-center text-primary font-semibold">WHAT WE OFFER</h3>
       <h2 className="text-center text-3xl font-bold">DATA SHEET FOR VSP</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-20 gap-x-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-24 gap-x-6">
         {items.map(({ img, text }, index) => (
           <div
             key={index}
             className="flex justify-center items-center"
           >
             <div className="flex items-center space-x-4 w-full max-w-[220px]">
-              <img src={img} alt={text} className="w-15 h-15 shrink-0" />
+              <img src={img} alt={text} className="w-16 h-16 shrink-0" />
               <p className="text-sm sm:text-base md:text-[20px] font-medium text-black leading-snug text-left">
-                {text}
+                {text === "Data Storage & Online Viewing" ? (
+                  <>
+                    Data Storage & Online <br /> Viewing
+                  </>
+                ) : (
+                  text
+                )}
               </p>
             </div>
           </div>

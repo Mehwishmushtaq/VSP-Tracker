@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import LogoDump from "../../assets/images/dumptracker.png";
-import LogoExcavator from "../../assets/images/excavator.png";
-import LogoScraper from "../../assets/images/scraper.png";
+import LogoDump from "../../assets/images/dumptruck.svg";
+import LogoExcavator from "../../assets/images/excavator.svg";
+import LogoScraper from "../../assets/images/scraper.svg";
 
 export default function Banner({ text }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,9 +19,9 @@ export default function Banner({ text }) {
   const getImageByText = () => {
     const key = text?.toLowerCase()?.trim();
     switch (key) {
-      case "dump tracker":
+      case "dump truck":
         return LogoDump;
-      case "excavater":
+      case "excavator":
         return LogoExcavator;
       case "scraper":
         return LogoScraper;
@@ -33,16 +33,20 @@ export default function Banner({ text }) {
   const selectedLogo = getImageByText();
 
   return (
-    <div className="bg-[#464646] w-full max-w-[320px] p-5 rounded-md">
+    <div className="bg-[#464646] w-full max-w-[350px] h-[160px] p-5 rounded-md">
       <div className="flex flex-col sm:flex-row gap-3 items-center">
         <img
           src={selectedLogo}
-          className="h-[100px] sm:h-[126px] w-auto object-contain"
+          className="h-auto w-[126.57px] object-contain mb-4"
           alt={text}
         />
-        <h2 className="text-green-700 font-semibold text-center sm:text-left text-lg underline underline-offset-2 mt-2 sm:mt-[1.2rem]">
+        <a
+          href="#"
+          className="text-primary font-bold text-xl sm:text-1xl text-center sm:text-right sm:self-start sm:mt-2 sm:mr-6 underline underline-offset-4 decoration-2 mt-2"
+        >
           {text}
-        </h2>
+        </a>
+
       </div>
     </div>
   );
