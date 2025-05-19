@@ -23,8 +23,8 @@ const VSPDataSheet = () => {
   ];
 
   return (
-    <div className="space-y-10 py-14 px-20">
-      <h3 className="text-center text-primary font-semibold">WHAT WE OFFER</h3>
+    <div className="space-y-10 py-14 px-6 sm:px-10 md:px-20 sm:mt-24 md:mt-28">
+      <h3 className="text-center text-primary mt-16 font-semibold">WHAT WE OFFER</h3>
       <h2 className="text-center text-3xl font-bold">DATA SHEET FOR VSP</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-24 gap-x-6">

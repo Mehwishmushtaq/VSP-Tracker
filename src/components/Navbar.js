@@ -24,16 +24,34 @@ export default function Navbar() {
 
         {/* Right Side - Other Socials */}
         <div className="flex items-center gap-3">
-          <div className="bg-gray-100 rounded-full p-1">
-            <TwitterIcon className="h-4 w-4 text-green-700" />
-          </div>
-          <div className="bg-gray-100 rounded-full p-1">
-            <InstagramIcon className="h-4 w-4 text-green-700" />
-          </div>
-          <div className="bg-gray-100 rounded-full p-1">
-            <FacebookIcon className="h-4 w-4 text-green-700" />
-          </div>
-        </div>
+  <a
+    href="https://twitter.com/yourProfile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gray-100 rounded-full p-1"
+  >
+    <TwitterIcon className="h-4 w-4 text-green-700" />
+  </a>
+
+  <a
+    href="https://instagram.com/yourProfile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gray-100 rounded-full p-1"
+  >
+    <InstagramIcon className="h-4 w-4 text-green-700" />
+  </a>
+
+  <a
+    href="https://facebook.com/yourProfile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gray-100 rounded-full p-1"
+  >
+    <FacebookIcon className="h-4 w-4 text-green-700" />
+  </a>
+</div>
+
       </div>
 
       {/* Main Navbar */}
@@ -55,7 +73,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 font-sans text-[16px] font-normal leading-6 text-[#4e4e4e]">
+          <div className="hidden md:flex space-x-6 font-sans text-[16px] font-normal leading-6 text-[#FFFFFF80]">
             <Link to="/" className="text-primary hover:scale-105 transition duration-300 hover:text-primary">
               HOME
             </Link>

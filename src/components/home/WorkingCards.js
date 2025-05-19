@@ -1,41 +1,61 @@
+import React from "react";
+
 export default function WorkingCards() {
-    return (
-        <div className="relative">
-            <div className="bg-primary h-[100%] md:h-[60%] absolute w-full"></div>
-            <div className="relative max-w-7xl mx-auto px-4 pt-16">
-                {/* Title Section */}
-                <div className="text-center mb-6 md:mb-12">
-                    <h3 className="text-white text-sm uppercase tracking-wider mb-2">WHAT WE ARE WORKING FOR</h3>
-                    <h2 className="text-white text-3xl font-bold">HOW VSP TRACKER PRODUCTIVITY WORKS</h2>
+  const features = [
+    { id: 1, title: "Easy Setup" },
+    { id: 2, title: "Simple Accurate Data Capture" },
+    { id: 3, title: "Real Time Results" },
+  ];
+
+  return (
+    <div className="relative bg-[#417a45] py-2 px-4">
+      <div className="relative max-w-7xl mx-auto text-center text-white z-10 mb-12">
+        <h3 className="text-base mt-12 uppercase tracking-wider mb-2">
+          WHAT WE ARE WORKING FOR
+        </h3>
+        <h2 className="text-3xl md:text-4xl font-bold">
+          HOW VSP TRACKER <br />PRODUCTIVITY WORKS
+        </h2>
+      </div>
+
+      <div className="relative max-w-5xl mx-auto mb-[-10%]">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between -mb-10">
+          {features.map((feature) => (
+            <div
+              key={feature.id}
+              className="relative w-[239px] mb-24 md:mb-0"
+              style={{
+                height: feature.id === 3 ? 262 : feature.id === 2 ? 263 : 265,
+                transform: `translateY(${feature.id === 1 ? '0' : feature.id === 2 ? '0' : '0'}px)`,
+              }}
+            >
+              <div className="relative w-[237px] h-full">
+                {/* Card Box */}
+                <div
+                  className="absolute w-[237px] h-[206px] top-[57px] left-0 bg-[#f8f8f8] rounded-[5px] shadow-[2px_4px_10px_#00000026]"
+                >
+                  <div className="flex flex-col items-center justify-center h-full px-4">
+                    <div className="font-semibold text-[#010101] text-[28px] text-center mt-6">
+                      {feature.title}
+                    </div>
+                  </div>
                 </div>
 
-                {/* Cards Container */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-10 min-h-[220px]">
-                    {/* Card 1 */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg relative">
-                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white flex items-center justify-center border-2 border-secondary">
-                            <span className="text-primary font-semibold">1</span>
-                        </div>
-                        <h3 className="text-center text-3xl font-semibold mt-4 mb-2">Easy Setup</h3>
-                    </div>
+                {/* Circle background */}
+                <div className="absolute w-20 h-20 top-0 left-[50%] transform -translate-x-1/2 bg-[#f8f8f8] rounded-full shadow-[2px_4px_10px_#00000026]" />
 
-                    {/* Card 2 */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg relative">
-                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white flex items-center justify-center border-2 border-secondary">
-                            <span className="text-green-700 font-semibold">2</span>
-                        </div>
-                        <h3 className="text-center text-3xl font-semibold mt-4 mb-2">Simple Accurate Data Capture</h3>
-                    </div>
+                {/* Circle border */}
+                <div className="absolute w-[60px] h-[60px] top-[10px] left-[50%] transform -translate-x-1/2 rounded-full border-2 border-[#417a45]" />
 
-                    {/* Card 3 */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg relative mb-3">
-                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white flex items-center justify-center border-2 border-secondary">
-                            <span className="text-green-700 font-semibold">3</span>
-                        </div>
-                        <h3 className="text-center text-3xl font-semibold mt-4 mb-2">Real Time Results</h3>
-                    </div>
+                {/* Number */}
+                <div className="absolute top-[27px] left-[50%] transform -translate-x-1/2 font-extrabold text-[#010101] text-[22px] text-center">
+                  {feature.id}
                 </div>
+              </div>
             </div>
+          ))}
         </div>
-    )
-}   
+      </div>
+    </div>
+  );
+}

@@ -81,7 +81,6 @@ const ReviewsSection = () => {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-            className="!overflow-visible"
           >
             {testimonials.map((item, index) => (
               <SwiperSlide key={index}>
