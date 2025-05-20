@@ -9,7 +9,6 @@ export default function Banner() {
                     <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-tight">
                         FROM DATA INPUTS TO INSIGHTFUL REPORTS
                     </h2>
-                    <h3>Mehwish</h3>
                     <p className="italic text-sm sm:text-base mt-1 sm:mt-2">
                         The <span className="font-semibold">VSPT</span> Process
                     </p>
